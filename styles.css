@@ -11,6 +11,8 @@ body {
 }
 
 .commentFormContainer {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
