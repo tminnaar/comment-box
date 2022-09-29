@@ -33,5 +33,8 @@ function submitForm(form) {
   commentContainer.appendChild(commentElement);
   commentContainer.appendChild(nameElement);
   commentContainer.classList.add("previousComment");
-  document.getElementById("commentHistory").appendChild(commentContainer);
+
+  const commentHistoryContainer = document.getElementById("commentHistory");
+  commentHistoryContainer.appendChild(commentContainer);
+  commentHistoryContainer.style.visibility = "visible";
 }
