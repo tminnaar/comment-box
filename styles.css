@@ -17,8 +17,7 @@ body {
 }
 
 h2 {
-  padding-top: 20px;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -27,18 +26,19 @@ h2 {
   height: 150px;
 }
 
-input[type="text"]:focus {
-  outline-offset: 1px;
-  outline-color: rgb(0, 217, 255);
-}
-
-input[type="submit"]:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
   outline-offset: 3px;
   outline-color: rgb(0, 217, 255);
 }
 
+textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
 input {
-  text-align: left;
+  border: 1px solid black;
   border-radius: 5px;
   height: 30px;
 }
