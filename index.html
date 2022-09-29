@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="commentBox.js"></script>
+    <title>Comment Box</title>
+  </head>
+  <header></header>
+  <body>
+    <div class="commentFormContainer">
+      <div class="commentForm">
+        <h2>Leave a comment!</h2>
+        <form action="">
+          <div class="nameBox">
+            <h3>Name:</h3>
+            <label for="fullName"></label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Smith"
+              required
+            />
+          </div>
+          <div class="emailBox">
+            <h3>Email Address:</h3>
+            <label for="emailAddress"></label>
+
+            <input
+              type="text"
+              id="emailAddress"
+              name="emailAddress"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+          <div class="commentBox">
+            <h3>Comment:</h3>
+            <label for="comment"></label>
+            <input
+              type="text"
+              id="comment"
+              name="comment"
+              class="comment"
+              placeholder="Type your comment here..."
+              required
+            />
+          </div>
+          <p id="lengthDisplay"></p>
+          <input type="button" id="Submit" name="Submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

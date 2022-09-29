@@ -1,0 +1,44 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#e76f51, #2a9d8f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentFormContainer {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.comment {
+  width: 90%;
+  height: 150px;
+}
+
+input[type="text"]:focus {
+  outline-offset: 1px;
+  outline-color: rgb(0, 217, 255);
+}
+
+input[type="submit"]:focus-visible {
+  outline-offset: 3px;
+  outline-color: rgb(0, 217, 255);
+}
+
+input {
+  text-align: left;
+  border-radius: 5px;
+  height: 30px;
+}
