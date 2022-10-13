@@ -1,69 +1,88 @@
 * {
-  font-family: "Comfortaa", cursive;
+	font-family: "Roboto", sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  background: linear-gradient(#e76f51, #2a9d8f);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	min-height: 100vh;
+	background-image: linear-gradient(to right, #38aecc, #b2ffa9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .commentFormContainer {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  box-shadow: 0 0px 15px rgb(0 0 0 / 0.4);
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	box-shadow: 0 0px 20px rgb(0 0 0 / 0.2);
+	background-color: rgb(255 255 255 / 0.4);
+	border-radius: 20px;
 }
 
 h2 {
-  font-size: 30px;
-  text-align: center;
+	font-size: 35px;
+	text-align: center;
 }
 
 .comment {
-  width: 97%;
-  height: 150px;
+	width: 97%;
+	height: 150px;
+}
+
+input[type="text"],
+textarea {
+	background-color: rgb(255 255 255 / 0.5);
 }
 
 input:focus-visible,
 textarea:focus-visible {
-  outline-offset: 0px;
-  outline-color: #2a9d8f;
+	outline-offset: 0px;
+	outline-color: #2a9d8f;
 }
 
 textarea {
-  border-radius: 5px;
-  border: 1px solid black;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 
 input {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 30px;
+}
+
+input::placeholder {
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+textarea::placeholder {
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+input[type="Submit"] {
+	font-weight: bold;
 }
 
 .commentHistoryContainer {
-  display: flex;
-  flex-direction: column;
-  width: 282px;
-  overflow-wrap: break-word;
-  margin: 20px;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
-  box-shadow: 0 0px 15px rgb(0 0 0 / 0.4);
-  visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	width: 282px;
+	overflow-wrap: break-word;
+	margin: 20px;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 20px;
+	box-shadow: 0 0px 15px rgb(0 0 0 / 0.4);
+	visibility: hidden;
 }
 
 .previousComment {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-top: 20px;
-  padding: 3px;
+	background-color: rgb(255 255 255 / 0.4);
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 3px;
 }

@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="commentBox.js" defer></script>
-    <title>Comment Box</title>
-  </head>
-  <body>
-    <div class="commentFormContainer">
-      <h2>Leave a comment!</h2>
-      <form action="#" onsubmit="javascript:submitForm(this); return false;">
-        <div class="nameBox">
-          <h3>Name:</h3>
-          <label for="fullName"></label>
-          <input
-            type="text"
-            id="name"
-            name="fullName"
-            placeholder="John Smith"
-            required
-          />
-        </div>
-        <div class="emailBox">
-          <h3>Email Address:</h3>
-          <label for="emailAddress"></label>
-          <input
-            type="text"
-            id="emailAddress"
-            name="emailAddress"
-            placeholder="example@mail.com"
-            required
-          />
-        </div>
-        <div class="commentBox">
-          <h3>Comment:</h3>
-          <label for="comment"></label>
-          <textarea
-            id="comment"
-            name="comment"
-            class="comment"
-            placeholder="Type your comment here..."
-            required
-          ></textarea>
-        </div>
-        <p id="lengthDisplay">0/140</p>
-        <input type="submit" id="Submit" name="Submit" value="Submit" />
-      </form>
-    </div>
-    <div class="commentHistoryContainer" id="commentHistory"></div>
-  </body>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="commentBox.js" defer></script>
+		<title>Comment Box</title>
+	</head>
+	<body>
+		<div class="commentFormContainer">
+			<h2>Leave a comment!</h2>
+			<form action="#" onsubmit="javascript:submitForm(this); return false;">
+				<div class="nameBox">
+					<h3>Name:</h3>
+					<label for="fullName"></label>
+					<input type="text" id="name" name="fullName" placeholder="John Smith" required />
+				</div>
+				<div class="emailBox">
+					<h3>Email Address:</h3>
+					<label for="emailAddress"></label>
+					<input type="text" id="emailAddress" name="emailAddress" placeholder="example@mail.com" required />
+				</div>
+				<div class="commentBox">
+					<h3>Comment:</h3>
+					<label for="comment"></label>
+					<textarea
+						id="comment"
+						name="comment"
+						class="comment"
+						placeholder="Type your comment here..."
+						required
+					></textarea>
+				</div>
+				<p id="lengthDisplay"><b>0/140</b></p>
+				<input type="submit" id="Submit" name="Submit" value="Submit" />
+			</form>
+		</div>
+		<div class="commentHistoryContainer" id="commentHistory"></div>
+	</body>
 </html>
