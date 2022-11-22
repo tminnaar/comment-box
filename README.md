@@ -1,4 +1,4 @@
-#Comment Box
+# Comment Box
 
 A very simple comment box with 2 inputs for Name and Email Address as well as a text area input for the comment field. I included placeholder text. The comment text area has a character limit of 140 that will turn red when exceded, as well as a required attribute in all fields.
 On submit, comments are displayed below and persist when a new comment is added.
